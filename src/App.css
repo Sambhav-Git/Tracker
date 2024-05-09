@@ -1,0 +1,237 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.form-row {
+  margin-bottom: 0.5rem;
+}
+.form-row label{
+  width: 10%;
+  display: inline-flex;
+}
+.form-row input {
+  border:1px solid #727272;
+  outline: none;
+}
+.form-row input:focus {
+  border:1px solid #50acf8;
+}
+.btn, button{
+  background: #05b6a9;
+  outline: none;
+  padding: 0.8rem 0.75rem;
+  color:#fff;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.newStyle{
+  width: 800px!important;
+  margin-top: -20px!important
+}
+
+.barcode-box {
+  position: relative;
+  top: 90px;
+  left: 140px;
+  display: inline-flex;
+}
+
+.barcodeClass tr td { height: 4px !important;}
+.barcodeClass.xs tr td { height: 4px !important;width: 0.5px !important}
+.barcodeClass.s tr td { height: 5px !important;width: 1px !important}
+.barcodeClass.m tr td { height: 6px !important; width: 1.5px !important}
+.barcodeClass.l tr td { height: 7px !important; width: 2px !important;}
+.barcodeClass.xl tr td { height: 8px !important; width: 2.5px !important;}
+.barcodeClass.xxl tr td { height: 9px !important; width: 3px !important;}
+
+:where(.css-dev-only-do-not-override-1okl62o).ant-modal .ant-modal-body {
+  padding-right: 20px;
+}
+.btn-download {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  width: auto;
+}
+
+
+/* Form CSS */
+.form-container {
+  width: 500px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 20px;
+}
+.form-container ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-container ul li:nth-child(1), 
+.form-container ul li:nth-child(2),
+.form-container ul li:nth-child(3),
+.form-container ul li:nth-child(4),
+.form-container ul li:nth-child(5),
+.form-container ul li:nth-child(6){
+    width: calc(50% - 1rem);
+    margin-right: 1rem;
+}
+.form-container ul li {
+  width: calc(100% - 1rem);
+  margin-right: 1rem;
+  position: relative;
+  flex-direction: column;
+}
+.form-container .form-row label {
+  width: 100%;
+}
+.form-container ul li:last-child {
+  display: flex;
+  align-items: flex-start;
+}
+
+.form-container ul.address {
+  border-top: 1px solid rgba(5, 5, 5, 0.06);
+  padding-top: 30px;
+  flex-direction: column;
+}
+.form-container ul.address li {
+  width: 100%;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+/* select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+} */
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #384047;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
